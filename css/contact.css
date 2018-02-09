@@ -1,0 +1,207 @@
+/*
+* Pupp-Paradise NCI project
+* Daniela Elisabeth Kepper, Michael O'Shea, Menyhert Palinko
+*
+* Standard contact page design with features like change the border of a missing text
+* in order to indicate the validity of the given email address, name or message.
+*/
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+	background-color:white;
+}
+
+#contact-us-form-main {
+	width:100%;
+	text-align: center;
+	display: block;
+}
+
+#contact-us-form-div {
+	display: inline-block;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: rgba(101, 102, 111, 0.4);
+	padding-left:40px;
+	padding-right:40px;
+	padding-top:40px;
+	padding-bottom:50px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+.contact-us-map {
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+}
+
+.contact-us-map iframe {
+	width: 100%;
+	height: 350px;
+}
+
+#contact-us-location {
+	display: inline-block;
+	height: 350px;
+	width: 100%;
+	border: 3px solid #ffffff;
+}
+
+.contact-us-input {
+	color:#3c3c3c;
+	font-family: 'Quicksand', sans-serif;
+  	font-weight:500;
+	font-size: 18px;
+	border-radius: 0;
+	line-height: 22px;
+	background-color: #fbfbfb;
+	padding: 13px 13px 13px 54px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+  	border: 3px solid rgba(0,0,0,0);
+}
+
+.contact-us-input:focus {
+	background: #fff;
+	box-shadow: none;
+	border: 3px solid #9C27B0;
+	color: #9C27B0;
+	outline: none;
+  	padding: 13px 13px 13px 54px;
+}
+
+/*
+* ---------------------------------------------------------
+* Displaying images for input fields is a trend on contact forms.
+* Material design approach with no rounded borders.
+* ---------------------------------------------------------
+*/
+#contact-us-name {
+	background-image: url(../images/name.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#contact-us-name:focus {
+	background-image: url(../images/name.svg);
+	background-size: 30px 30px;
+	background-position: 8px 5px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#contact-us-email {
+	background-image: url(../images/email.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#contact-us-email:focus {
+	background-image: url(../images/email.svg);
+	background-size: 30px 30px;
+  	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+#contact-us-message {
+	background-image: url(../images/comment.svg);
+	background-size: 30px 30px;
+	background-position: 11px 8px;
+	background-repeat: no-repeat;
+}
+
+/*
+* ---------------------------------------------------------
+* Submit button with different hover
+* Material design approach without rounded borders.
+* ---------------------------------------------------------
+*/
+#contact-us-submit {
+	outline: none;
+	font-family: 'Quicksand', sans-serif;
+	width: 100%;
+	border: #ffffff solid 4px;
+	cursor:pointer;
+	background-color: #9C27B0;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+  	font-weight:600;
+}
+
+#contact-us-submit:hover {
+	border: #9C27B0 solid 4px;
+	background-color: #fff;
+	color: #9C27B0;
+}
+
+/*
+* ---------------------------------------------------------
+* In case of errors we display the errormessage box.
+* In case of successful messsage sending we display the successmessage box.
+* They are designed to be straightforward with the red-green colors.
+* Also animated to ease in and out rather than just displaying by put them immidiately to the screen.
+* ---------------------------------------------------------
+*/
+#contactSuccessMessage, #contactErrorMessage {
+	display:none;
+	transition: opacity 0.85s ease-in-out;
+	opacity: 0;
+	margin-bottom: 15px;
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+    border: 2px white solid;
+}
+
+#contactSuccessMessage {
+	background-color: #07920d;;
+}
+
+#contactErrorMessage {
+    background-color: #b70000;
+}
+
+.inputError {
+	border: 3px solid #b70000 !important;
+}
+
+/*
+* ---------------------------------------------------------
+* Different sizing modes for different screen sizes.
+* Optimized to the most common sreen sizes.
+* ---------------------------------------------------------
+*/
+@media ( max-width : 767px) {
+	#contact-us-form-div {
+		width: 95%;
+	}
+
+	#contact-us-form-main {
+		padding-top: 190px;
+	}
+}
+
+@media ( min-width : 768px) {
+	#contact-us-form-div {
+		width: 70%;
+	}
+}

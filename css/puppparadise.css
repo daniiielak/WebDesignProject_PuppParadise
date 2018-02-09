@@ -1,0 +1,474 @@
+/*
+* Pupp-Paradise NCI project
+* Daniela Elisabeth Kepper, Michael O'Shea, Menyhert Palinko
+*
+* Design for the main layout, home page, services page, privacy policy page and sitemap
+*/
+
+/*
+* ---------------------------------------------------------
+* Global styles
+* ---------------------------------------------------------
+*/
+html, body, main, footer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #282828;
+  background-image:url("../images/puppbackground1.jpg");
+  background-size: cover;
+}
+
+h1 {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Quicksand', sans-serif;
+  margin-left:30px;
+  margin-right:80px;
+}
+
+/*
+* ---------------------------------------------------------
+* Header + Menu styles
+* ---------------------------------------------------------
+*/
+#menubar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#menubar li {
+  list-style-type: none;
+}
+
+#menubar li a {
+  color: #282828;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 110%;
+}
+
+#menubar li a:hover {
+  color:#282828;
+}
+
+#logo {
+  width: 60px;
+  height: 60px;
+}
+
+.active {
+  background-color: #ADD8E6;
+  border: 1px solid #e5f9ff;
+}
+
+.active a {
+  color:#565892 !important;
+}
+
+/*
+* ---------------------------------------------------------
+* Main layout and related styles
+* ---------------------------------------------------------
+*/
+main {
+  grid-area: main;
+  padding-top: 25px;
+}
+
+main p {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+.container {
+  display: grid;
+  height:100%;
+  grid-template-rows: 80px auto 125px;
+  grid-template-areas: "header"
+  "main"
+  "footer";
+}
+
+/*
+* ---------------------------------------------------------
+* Footer and related styles
+* ---------------------------------------------------------
+*/
+footer {
+  grid-area:footer;
+  width:100%;
+  height: 125px;
+  max-height: 125px;
+  text-align: center;
+  font-style: italic;
+  font-size: 80%;
+  background-color: #fff;
+  border-top: 1px solid #e8e8e8;
+}
+
+footer p {
+  margin: 0px;
+  padding: 3px;
+}
+
+.social-icon {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.footerlinks {
+  list-style-type: none;
+  padding: 5px;
+  margin: 0px;
+}
+
+.footerlinks a, .footerlinks a:visited {
+  text-decoration: none;
+  color: #b70505;
+
+}
+
+.footerlinks a:hover {
+  color: #d09393;
+}
+
+/*
+* ---------------------------------------------------------
+* Services and related styles
+* ---------------------------------------------------------
+*/
+.service-columns {
+  box-sizing: border-box;
+  padding: 5px;
+  margin-left: 25px;
+}
+
+.service-columns li {
+  background-color: #FFF;
+}
+
+.service-price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.service-price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.service-price .service-header {
+  background-color: #a5a2a2;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.service-price li {
+  border-bottom: 1px solid #eee;
+  padding: 16px;
+  text-align: center;
+}
+
+.service-price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.service-button {
+  background-color: #d29ebd;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.service-button:hover {
+  background-color: #7a1c8a;
+  color: #ffe6fc;
+}
+
+.page-picture {
+  display: inline-block;
+  margin-left:30px;
+  margin-right:20px;
+}
+
+.button {
+  background-color: #ffffff;
+  border: none;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+.info-button {
+  background-color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  border: solid;
+  border-color: #282828;
+  border-width: 0.5px;
+  color: #282828;
+  font-weight: bold;
+  padding: 6px 13px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 1px 5px;
+  border-radius: 50%;
+  content: attr(title);
+  z-index: 98;
+}
+
+#video {
+  display: inline-block;
+}
+
+.pupp-spacer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+/*
+* ---------------------------------------------------------
+* Home (index) page
+* ---------------------------------------------------------
+*/
+#about_us
+{
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+#feedback {
+  box-sizing: border-box;
+  padding: 3px;
+  overflow: auto;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: #f4d2ce;
+}
+
+#centre {
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+
+#centre2>img{
+  align-items:center;
+  justify-content:center;
+}
+
+.slides {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#sitemap_left {
+  float:left;
+  width:32%;
+  border:1px solid;
+  padding-left:5px;
+}
+
+#sitemap_mid {
+  float:left;
+  width:32%;
+  border:1px solid;
+  padding-left:5px;
+}
+
+#sitemap_right {
+  float:left;
+  width:32%;
+  border:1px solid;
+  padding-left:5px;
+}
+
+/*
+* ---------------------------------------------------------
+* Handle different screen sizes differently
+* Mobile support
+* ---------------------------------------------------------
+*/
+@media ( max-width : 767px) {
+
+  /*
+  * Main layout
+  */
+  header {
+    grid-area: header;
+    background-color: #f4d2ce;
+    height: 295px;
+    width: 100%;
+    z-index: 999999;
+  }
+
+  #menubar li a {
+    padding: 14px 8px;
+  }
+
+  /*
+  * Index Page
+  */
+  .pupp-home-title {
+    padding-top: 200px;
+  }
+
+  #centre2>img{
+    width:180px;
+    height: 160px;
+  }
+
+  #about_us {
+    width: 100%;
+  }
+
+  #feedback {
+    width: 100%;
+  }
+
+  #centre {
+    width: 100%;
+  }
+
+  /*
+  * Services page
+  */
+  .service-columns {
+    width: 100%;
+    padding-top: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 10px !important;
+    margin: 0px !important;
+  }
+
+  .page-picture {
+    float: left;
+    height: 130px;
+  }
+
+  #video {
+    max-width: 95%;
+    margin-left:0px;
+    margin-right:0px;
+    box-sizing: border-box;
+    float: right;
+  }
+
+  /*
+  * Couple of titles such as Services, Sitemap etc.
+  */
+  .pupp-services-title, .pupp-privacypolicy-title, .pupp-sitemap-title {
+      padding-top: 200px;
+  }
+}
+
+@media ( min-width : 768px) {
+
+  /*
+  * Main layout
+  */
+  header {
+    grid-area: header;
+    background-color: #f4d2ce;
+    height: 80px;
+    width: 100%;
+    z-index: 999999;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+
+  #menubar li {
+    list-style-type: none;
+    float: left;
+  }
+
+  #menubar li a {
+    padding: 14px 40px;
+  }
+
+  #logo {
+    display: inline-block;
+    float: left;
+  }
+
+  #home {
+    margin-left: 15px;
+  }
+
+  /*
+  * Index Page
+  */
+  #centre2>img{
+    width:480px;
+    height: 360px;
+  }
+
+  #about_us {
+    float: left;
+    width: 25%;
+  }
+
+  #feedback {
+    float: right;
+    width: 25%;
+    height: 50%;
+  }
+
+  #centre {
+    float: right;
+    width: 50%;
+  }
+
+  /*
+  * Services page
+  */
+  .service-columns {
+    float: left;
+    width: 20%;
+  }
+
+  .page-picture {
+    float: left;
+    height: 320px;
+  }
+
+  #video {
+    margin-left:30px;
+    margin-right:20px;
+    float: left;
+  }
+}

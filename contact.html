@@ -1,0 +1,44 @@
+<div id="contact-us-form-main">
+  <div id="contact-us-form-div">
+
+    <h2>Contact Us</h2>
+
+    <form name="contactForm" autocomplete="off" novalidate>
+
+      <div id="contactSuccessMessage"></div>
+
+      <div class="contact-us-name">
+        <input name="name" type="text" class="contact-us-input" placeholder="Your Name" id="contact-us-name" oninput="puppParadiseApp.formReqNameValidation()" />
+      </div>
+
+      <div class="email">
+        <input name="email" type="text" class="contact-us-input" id="contact-us-email" placeholder="Your Email" oninput="puppParadiseApp.formReqEmailValidation()" />
+      </div>
+
+      <div class="text">
+        <textarea name="text" class="contact-us-input" id="contact-us-message" placeholder="Your Message" oninput="puppParadiseApp.formReqMessageValidation()"></textarea>
+      </div>
+
+      <div id="contactErrorMessage"></div>
+
+      <div>
+        <button type="button" id="contact-us-submit" onclick="puppParadiseApp.submitContactForm()">Send Message</button>
+      </div>
+
+      <div>
+        <p><b>Phone: (01) 449 8500 - Email: info@pupp-paradise.ie</b></p>
+      </div>
+
+      <div class="contact-us-map">
+
+        <h2>Our location</h2>
+        <p>Pupp-Paradise Inc., IFSC, Mayor Street, North Dock, Dublin 1, D01 Y300, Ireland</p>
+
+        <div id="contact-us-location">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.648919708055!2d-6.245323429144899!3d53.348795413218916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational+College+of+Ireland!5e0!3m2!1sen!2sie!4v1509204100287" style="border:none"></iframe>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>
