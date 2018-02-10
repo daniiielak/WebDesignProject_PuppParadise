@@ -20,5 +20,5 @@ The website is hosted on 000webhost (https://pupp-paradise.000webhostapp.com/#) 
 -Privacy Policy
 
 ## Images
-Below is a screen of the Google Sheet setup for the Script:
-![Image Services Page](https://github.com/daniiielak/GoogleAppsScript/blob/master/Image/EventReminderImage.png "Screen Google Sheet Setup")
+Below is a screen of the Services Page of the Pupp Paradise website:
+![Image Pupp Paradise Services Page](https://github.com/daniiielak/WebDesignProject_PuppParadise/blob/master/img/screen-services.png "Screen Pupp Paradise Services Page")
